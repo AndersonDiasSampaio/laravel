@@ -25,5 +25,5 @@ Route::prefix('/admin')->group(function () {
     });
     Route::get('usera/{id}', function ($id) {
         echo "$id";
-    });
+    })->name('teste'); /// com esse tipo de função você cria nomes para as rotas
 });
