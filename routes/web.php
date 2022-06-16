@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/teste/{nome}/{endereco}', function ($nome, $endereco) {
+    echo "olá $nome, você mora em $endereco <br>";
+});
